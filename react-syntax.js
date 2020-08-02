@@ -36,3 +36,16 @@ ReactDOM.render(
     myList,
     document.getElementById('app')
 );
+
+const myDiv = <div className="big">I AM A BIG DIV</div>
+
+ReactDOM.render(
+    myDiv,
+    document.getElementById('app')
+);
+
+let math = <h1>2 + 3 = {2 + 3}</h1>
+ReactDOM.render(
+    math,
+    document.getElementById('app')
+);
