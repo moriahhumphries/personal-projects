@@ -133,3 +133,23 @@ ReactDOM.render(
     <Friend />,
     document.getElementById('app')
 )
+
+const fiftyFifty = Math.random() < 0.5;
+
+// New component class starts here:
+class TonightsPlan extends React.Component {
+    render() {
+        let plan;
+        if (!fiftyFifty) {
+            plan = "to bed WOOO"
+        } else {
+            plan = "out WOOO"
+        }
+        return <h1>Tonight I'm going {plan}</h1>;
+    }
+}
+
+ReactDOM.render(
+    <TonightsPlan />,
+    document.getElementById('app')
+);
